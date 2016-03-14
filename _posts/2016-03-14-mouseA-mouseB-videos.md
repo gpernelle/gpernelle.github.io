@@ -2,7 +2,7 @@
 layout:     post
 title:      Mouse A and B videos
 date:       2016-03-14
-summary:    Movie of the processed recording of mouse A and B
+summary:    Movies of the processed recordings of mouse A and B
 categories: gevi
 ---
 
