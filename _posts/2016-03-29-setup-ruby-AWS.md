@@ -1,168 +1,264 @@
 ---
 layout:     post
-title:      How to set up an ipython cluster
-date:       2016-03-28
-summary:    Summary of installation steps to configure an ipython cluster (Ubuntu + OSX)
+title:      How to set up a Ruby server on AWS
+date:       2016-03-29
+summary:    Summary of installation steps to configure a ruby server on AWS
 categories: blog
 ---
 
-The idea of this project is to make use of different machines for large parallel computations such as parameter search.
-For example, I am investing the behavior of a spiking neural network for different values of external input and electrical synapse 
-strength. Here I plot the power of strongest frequency components after analysis in the Fourier domain:
+This tutorial summarize important steps to setup a `Ruby on Rails` server on Amazon AWS EC2, running passenger, postgreSQL, 
+redis
 
-![phase plan diagram](/images/phase_plan.png)
+## First create an instance from the AWS console and ssh into it.
 
-The library `ipyparallel` allows such computation, by distributing the computation accorss severals workers.
-
-### Install ipython
-
-[pyenv](https://github.com/yyuu/pyenv) is a convenient tool to control which version of python is installed. 
-For this installation, I went with `anaconda3.2-5-0`
+## Install essential packages and create website directy
 
 ```bash
-pyenv install anaconda3.2-5-0
+sudo yum update
+sudo yum groupinstall "Development Tools"
+sudo yum install -y gcc openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel
 ```
 
-(be sure you have updated pyenv previously doing `pyenv update` if available, or `git pull origin master` if you cloned pyenv,
-or `brew update && brew upgrade pyenv` if pyenv was installed with brew.
+If you need postgresql
 
-### Configure SSH for all nodes
+```
+sudo yum install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
+```
 
-[ssh without password](http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/)
+Create directory where we are going to clone our website
 
 ```bash
-ssh-keygen  # (without passphrase)
-ssh-copy-id -i ~/.ssh/id_rsa.pub remote-host #(where remote-host is the machine you try to ssh to) (https://github.com/beautifulcode/ssh-copy-id-for-OSX)
+mkdir git-repos
+cd git-repos/
 ```
 
-Then try ssh remote-host
-
-
-### Create profile cluster on hub machine
+Install rbenv to manage ruby version
 
 ```bash
-ipython profile create --parallel --profile=cluster
+git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
-### Create symbolic link for python on every node:
+
+Install ruby build
 
 ```bash
-sudo ln -s ~/.pyenv/versions/anaconda3-2.5.0/bin/python /python
+ git clone https://github.com/sstephenson/ruby-build.git
+ cd ruby-build
+ sudo ./install.sh
+ ```
+ 
+ Install rbenv plugin rbenv-sudo
+ 
+ ```bash
+ mkdir ~/.rbenv/plugins
+ git clone git://github.com/dcarley/rbenv-sudo.git ~/.rbenv/plugins/rbenv-sudo
 ```
 
-### Edit ~/.ipython/profile\_cluster/ipcluster\_config.py
+Install ruby
 
-```python
-c = get_config()
-
-c.IPClusterEngines.engine_launcher_class = 'SSH'
-c.LocalControllerLauncher.controller_args = ["--ip='*'"]
-
-c.SSHEngineSetLauncher.engines = {
-    'localhost': 4,
-    'node1': 4,
-    'node2': 4,
-}
+```
+cd ~
+exec $SHELL -l
+source ~/.bashrc
+rbenv install 2.2.0
+rbenv global 2.2.0  # set up this version globally
 ```
 
-### Create profile cluster on nodes
+Configure ssh access to bitbucket or github
+
+```
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+cd ~/git-repos/
+git clone git@bitbucket.org:yourusername/yourgitrepo.git
+cd yourrgitrepo
+```
+
+Install gems
+
+```
+rbenv rehash
+gem install bundler
+bundle install
+source ~/.bashrc
+```
+
+### Install PostgreSQL (if necessar)
+
+```
+gem install pg
+```
+
+Init and configure DB
+
+```
+sudo service postgresql initdb
+sudo vim /var/lib/pgsql9/data/pg_hba.conf
+```
+
+What you should see:
+```
+local   all             all                                     trust
+```
+
+Add pg user
+
+```
+sudo service postgresql status
+sudo service postgresql start
+sudo su - postgres
+```
+
+Creat user in postgresSQL
+
+```sql
+createuser ec2-user --superuser -W
+```
+
+Edit you config/database.yml (if necessayr)
+
+```vim
+vim config/database.yml
+```
+
+It should be something similar
+
+```yaml
+development:
+  adapter: postgresql
+  database: yourwebsite_development
+  pool: 5
+  template: template0
+  username: ec2-user
+  password: 
+
+production:
+  adapter: postgresql
+  database: yourwebsite_production
+  pool: 5
+  template: template0
+  username: ec2-user
+  password: 
+
+test:
+  adapter: postgresql
+  database: yourwebsite_test
+  pool: 5
+  template: template0
+  username: ec2-user
+password:
+```
+
+Create the databases
 
 ```bash
-ipython profile create --parallel --profile=cluster
+rake db:create:all
+rake db:schema:load
+rake db:migrate
 ```
 
-### Duplicate packages from one machine 
+Verify it worked by launching rails console
 
-In case you already have one machine with all the packages you need, it is possible to duplicate this installation
-by generating a list of moduled installed. 
+```
+rails c
+```
 
-With anaconda
+### Install redis
+
+Create a redis installation script:
 
 ```bash
-conda list --export > env.txt
+cd ~
+vim install-redis.sh
 ```
 
-Or with pip
+And copy the following script
 
 ```bash
-pip freeze > requirements.txt
+# chmod 777 install-redis.sh
+# ./install-redis.sh
+###############################################
+echo "*****************************************"
+echo " 1. Prerequisites: Install updates, set time zones, install GCC and make"
+echo "*****************************************"
+sudo yum -y update
+#sudo ln -sf /usr/share/zoneinfo/America/Los_Angeles \/etc/localtime
+sudo yum -y install gcc gcc-c++ make
+echo "*****************************************"
+echo " 2. Download, Untar and Make Redis stable"
+echo "*****************************************"
+cd /usr/local/src
+sudo wget http://download.redis.io/redis-stable.tar.gz
+sudo tar xzf redis-stable.tar.gz
+sudo rm redis-stable.tar.gz -f
+cd redis-stable
+sudo make distclean
+sudo make
+echo "*****************************************"
+echo " 3. Create Directories and Copy Redis Files"
+echo "*****************************************"
+sudo mkdir /etc/redis /var/lib/redis
+sudo cp src/redis-server src/redis-cli /usr/local/bin
+echo "*****************************************"
+echo " 4. Configure Redis.Conf"
+echo "*****************************************"
+echo " Edit redis.conf as follows:"
+echo " 1: ... daemonize yes"
+echo " 2: ... bind 127.0.0.1"
+echo " 3: ... dir /var/lib/redis"
+echo " 4: ... loglevel notice"
+echo " 5: ... logfile /var/log/redis.log"
+echo "*****************************************"
+sudo sed -e "s/^daemonize no$/daemonize yes/" -e "s/^# bind 127.0.0.1$/bind 127.0.0.1/" -e "s/^dir \.\//dir \/var\/lib\/redis\//" -e "s/^loglevel verbose$/loglevel notice/" -e "s/^logfile stdout$/logfile \/var\/log\/redis.log/" redis.conf | sudo tee /etc/redis/redis.conf
+echo "*****************************************"
+echo " 5. Download init Script"
+echo "*****************************************"
+sudo wget https://raw.github.com/saxenap/install-redis-amazon-linux-centos/master/redis-server
+echo "*****************************************"
+echo " 6. Move and Configure Redis-Server"
+echo "*****************************************"
+sudo mv redis-server /etc/init.d
+sudo chmod 755 /etc/init.d/redis-server
+echo "*****************************************"
+echo " 7. Auto-Enable Redis-Server"
+echo "*****************************************"
+sudo chkconfig --add redis-server
+sudo chkconfig --level 345 redis-server on
+echo "*****************************************"
+echo " 8. Start Redis Server"
+echo "*****************************************"
+sudo service redis-server start
+echo "*****************************************"
+echo " Complete!"
+echo " You can test your redis installation using the redis console:"
+echo "   $ /usr/local/redis-2.6.16/src/redis-cli"
+echo "   redis> set foo bar"
+echo "   OK"
+echo "   redis> get foo"
+echo "   bar"
+echo "*****************************************"
+read -p "Press [Enter] to continue..."
 ```
 
-However, because anaconda doesn't respect the order of the packages and will
-likely stop when a dependeny is not yet installed, the following script works:
+Then perform the installation
+
+```
+sudo sh install-redis.sh
+```
+
+### Install passenger
 
 ```bash
-cat requirements.txt | while read PACKAGE; do conda install --yes "$PACKAGE"; done
+cd ~/git-repos/yourwebsite
 ```
 
-From /Dropbox/ipythoncluster: sudo python pipreqs.py requirements.txt
-
-Or if you use pip instead
-
-```python
-"""
-pipreqs.py: run ``pip install`` iteratively over a requirements file.
-"""
-def main(argv):
-    try:
-        filename = argv.pop(0)
-    except IndexError:
-        print("usage: pipreqs.py REQ_FILE [PIP_ARGS]")
-    else:
-        import pip
-        retcode = 0
-        with open(filename, 'r') as f:
-            for line in f:
-                pipcode = pip.main(['install', line.strip()] + argv)
-                retcode = retcode or pipcode
-        return retcode
-if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv[1:]))
+```
+gem install passenger
+rbenv sudo passenger start -p80 &
 ```
 
-then run
+### It's online!
 
-```bash
-python pipreqs.py requirements.txt
-```
-
-
-### Start the cluster
-
-```
-ipcluster start --profile=cluster
-```
-
-### Setup Ubuntu cloud
-
-[Installing JUJU](https://help.ubuntu.com/lts/clouddocs/en/Installing-Juju.html)
-
-```bash
-sudo apt-get update
-sudo apt-get install juju-core
-sudo apt-get install juju-quickstart juju-deployer charm-tools
-```
-
-
-[installing MAAS](https://maas.ubuntu.com/docs/install.html)
-
-```bash
-sudo add-apt-repository ppa:maas/stable
-sudo apt-get update
-sudo apt-get install maas
-```
-
-### Additionnal tips
-
-To sync a folder over the network:
-
-```bash
-rsync -r ~/Projects/github/cortex/data/ gp1514@beast:~/Dropbox/ICL-2014/Code/c-code/cortex/data
-```
-
-
-
-### Additional Resources
-
--   [How to set up a private ipython cluster](http://ianhowson.com/how-to-set-up-a-private-ipython-cluster.html)
--   [How to set up an ipython cluster](https://github.com/tritemio/PyBroMo/wiki/Howto-setup-an-IPython-cluster)
+With passenger start, you should be able to visit your website by entering the public DNS address given by amazon (on the EC2 
+instance interface).
