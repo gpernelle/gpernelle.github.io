@@ -98,8 +98,10 @@ text:
 
 # Build settings
 #markdown:     redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+#redcarpet:
+#  extensions: ['smart', 'tables', 'with_toc_data']
+kramdown:
+  input: GFM
 permalink:    pretty
 paginate:     4
 sass:
