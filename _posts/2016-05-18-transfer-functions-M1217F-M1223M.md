@@ -9,8 +9,12 @@ meta_robots: noindex
 
 iPython notebooks:
 
-* [Modeling of the transfer function mice A and B](/GEVI/20160518/2016-02-06-alphafit.html)
-* [Modeling of the transfer function mice M1217F and M1223M](/GEVI/20160518/2016-05-03-alphafit-M1217F-and-M1223M.html)
+* [Transfer functions mice A and B](/GEVI/20160518/2016-02-06-alphafit.html)
+* [Transfer functions mice A and B, without filtering](/GEVI/20160518/2016-05-19-alphafit-mA-mB-no-alpha-filtering.html)
+
+* [Transfer functions mice M1217F and M1223M](/GEVI/20160518/2016-05-03-alphafit-M1217F-and-M1223M.html)
+* [Transfer functions mice M1217F and M1223M with splitted recordings (4 X 1min)](/GEVI/20160518/2016-05-19-alphafit-M1217F-and-M1223M-SPLITTED.html)
+* [Transfer functions mice M1217F and M1223M with splitted recordings (4 X 1min), without filtering](/GEVI/20160518/2016-05-19-alphafit-M1217F-and-M1223M-SPLITTED-no-filtering.html)
 
 ## Comparison of transfer functions mouseA, mouseB, mouseM1217F, mouseM1223M
 
