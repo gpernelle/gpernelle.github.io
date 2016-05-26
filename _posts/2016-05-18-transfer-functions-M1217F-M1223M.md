@@ -13,7 +13,7 @@ iPython notebooks:
 * [Transfer functions mice A and B, without filtering](/GEVI/20160518/2016-05-19-alphafit-mA-mB-no-alpha-filtering.html)
 
 * [Transfer functions mice M1217F and M1223M](/GEVI/20160518/2016-05-03-alphafit-M1217F-and-M1223M.html)
-* [Transfer functions mice M1217F and M1223M](/GEVI/20160518/2016-05-03-alphafit-M1217F-and-M1223M-MASK.html)
+* [Transfer functions mice M1217F and M1223M - preprocessing with masks](/GEVI/20160518/2016-05-03-alphafit-M1217F-and-M1223M-MASK.html)
 * [Transfer functions mice M1217F and M1223M with split recordings (4 X 1min)](/GEVI/20160518/2016-05-19-alphafit-M1217F-and-M1223M-SPLITTED.html)
 * [Transfer functions mice M1217F and M1223M with split recordings (4 X 1min), without filtering](/GEVI/20160518/2016-05-19-alphafit-M1217F-and-M1223M-SPLITTED-no-filtering.html)
 
