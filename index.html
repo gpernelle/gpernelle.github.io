@@ -1,30 +1,86 @@
 ---
 layout: default
-meta_robots: noindex
 ---
-<!--paginator.posts-->
-{% assign posts_count = (site.categories.gevi | size) %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in site.categories.gevi %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div>
+<h2>Summary</h2>
+<p>
+  I am modelling and analysing the dynamics of neural networks. In particular I am investing how the plasticity of gap junctions (electrical synapses) could regulate the oscillations of electrical activity that are observed in many brain regions. A functional implication of those results is that gap junction plasticity could ensure robust information transfer between brain regions.
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
-  {% endif %}
-</div>
+  I am also studying the relationship between blood oxygen concentration and neural activity.
+
+  I am also a Graduate Teaching Assistant in Computational Neuroscience, Mathematics and Python Programming courses.
+
+  Dr. Claudia Clopath is my PhD supervisor.
+</p>
+
+<h2>Qualifications</h2>
+<h3>Imperial College London</h3>
+<div class="date">Computational Neuroscience Laboratory</div>
+<div class="date">London, United Kingdom , November 2014 to October 2017</div>
+
+<p>Ph.D. candidate. I model spiking neural networks and I investigate the functional implications of
+activity-dependent plasticity of electrical synapses on network dynamics. In addition, I study how
+blood oxygen concentration can predict neural activity. I also collaborate with the Surgical
+Planning Laboratory (Harvard Medical School) to improve the segmentation of catheters from
+  MRI using machine learning.</p>
+
+<h3>Technische Universität München</h3>
+<div class="date">Munich, Germany 2010 to 2012</div>
+<p>Diplom-Ingenieur Universität (corresponding to Master) Mechanical Engineering (Medical
+Technologies & Microtechnics). Top Industrial Managers for Europe program.
+  Master thesis at Harvard Medical School, described in professional experience.</p>
+
+
+<h3>Ecole Centrale, Marseille</h3>
+<div class="date">France, 2008 to 2012</div>
+<p>Ingénieur Centralien (corresponding to Master) specialized in image processing and spatiotemporal signal processing.
+Thesis Topic: Development of an imaging system based on light polarization for biomedical
+  applications (detection of skin cancers).</p>
+
+<h2>Professional Experience</h2>
+<h3>Qualimatest</h3>
+<div class="date"> Geneva, Switzerland, June 2013 to October 2014</div>
+<p>Software developer building automated vision control solutions with data acquisition and signal
+and image processing. Analyzed the customer requirements, took part of designing the technical
+solution (optics, software and hardware), developed software solutions (algorithms and GUI),
+installed the systems on the customer’s premises, tested and validated the systems, realized
+technical documentation and user manuals. Lead developer of QMTSubface (developed in
+partnership with the EPFL). This project uses machine learning to qualify the esthetical properties
+  of objects.</p>
+
+
+<h3>Surgical Planning Laboratory, Harvard Medical School</h3>
+<div class="date">Boston, USA, June to December 2012</div>
+<p>Research Trainee in Radiology, Brigham and Women’s Hospital and Harvard Medical School.
+Finishing my study at TU München, I wrote my master thesis at the Surgical Planning Laboratory.
+This thesis spans mathematical algorithm development in image segmentation and registration
+using mechanically inspired models, design of an evaluation phantom and a dependent study, as
+well as efficient and well-documented software developed in Python and C++, which has been
+released publicly. This work has been followed by several peer-reviewed publications (MICCAI
+  2013, Medical Image Analysis 2017).</p>
+
+
+<h3>CorInnova</h3>
+<div class="date">College Station, Texas, USA June to August 2010</div>
+<p>R&D Intern working on a cardiac assistant and support device.
+Prototyped analog hardware for reading an electrocardiogram (ECG) and driving a pump. This
+was part of the development of a non-blood contacting cardiac assist and support device system
+that pushes the heart wall synchronized with an ECG.
+Airbus EADS Final Assembly Line A340, Toulouse, France July to August 2009
+Intern on the final assembly line of the Airbus A340. Responsibilities included assembly of
+  motors, winglets, and landing gear as well as on verification of electrical systems.</p>
+
+<h2>Skills</h2>
+<h3>Computer Programming</h3>
+<p>Python, C++, GPU programming (Tensorflow), High Performance Computing</p>
+
+<h3>Mathematics skill set</h3>
+<p>Linear algebra, functional analysis, dynamical systems, numerical methods, signal and image
+  processing.</p>
+
+<h3>Neural Networks and Machine Learning</h3>
+<p>Spiking neural networks, activity dependent plasticity, artificial neural networks (CNNs, RNNs).</p>
+
+<h2>Publications</h2>
+
+<h2>Presentations</h2>
