@@ -1,0 +1,337 @@
+---
+layout: default
+---
+
+<h2>Summary</h2>
+<p>
+    I am a highly skilled and experienced professional with a strong background in engineering and neuroscience, as well
+    as a proven track record of leadership and expertise in machine learning. My PhD from Imperial College London
+    focused on modeling and analyzing the dynamics of neural networks, specifically the role of gap junctions in
+    regulating the oscillations of electrical activity observed in many brain regions. I have also earned a
+    Diplom-Ingenieur in Mechanical Engineering and an Ingénieur Centralien degree, both with a focus on the application
+    of
+    advanced technologies in the medical field.</p>
+<p>
+    In my professional experience, I have demonstrated strong leadership skills in guiding research and development
+    efforts, and have successfully integrated advanced technologies into a company's technology stack. I have a deep
+    understanding of machine learning concepts and have developed innovative investment strategies utilizing
+    state-of-the-art techniques. My experience in software development and data
+    acquisition further compliments my skills in machine learning. I am a team player and have the ability to work
+    effectively in teams.
+</p>
+
+<h2>Qualifications</h2>
+<h3>Imperial College London</h3>
+<div class="date">Computational Neuroscience Laboratory</div>
+<div class="date">London, United Kingdom , November 2014 to October 2017</div>
+
+<p>I modeled and analyzed the dynamics of neural networks, focusing on the role of gap junctions, or electrical
+    synapses, in regulating the oscillations of electrical activity observed in many brain regions. My research showed
+    that gap junction plasticity could play a crucial role in ensuring robust information transfer between brain
+    regions. Additionally, I studied the relationship between blood oxygen concentration and neural activity. As a
+    Graduate Teaching Assistant, I also assisted in Computational Neuroscience, Mathematics, and Python Programming
+    courses. My PhD supervisor was Dr. Claudia Clopath. <a
+            href="https://spiral.imperial.ac.uk/bitstream/10044/1/73369/1/Pernelle-G-2018-PhD-Thesis.pdf"
+            target="_blank" rel="noopener noreferrer">Link to PhD Thesis</a></p>
+
+<h3>Technische Universität München</h3>
+<div class="date">Munich, Germany 2010 to 2012</div>
+<p>I earned a Diplom-Ingenieur in Mechanical Engineering with a focus on Medical Technologies & Microtechnics from a
+    German University. I was also selected to participate in the Top Industrial Managers for Europe program, which
+    provides training for future leaders in the industry. During my master's degree, I completed my thesis at a lab
+    affiliated with Harvard Medical School, where I applied research, software engineering, and mechanical engineering
+    techniques to the medical field, specifically in radiology. This experience gave me a deep understanding of the
+    latest advancements in the field, and the opportunity to collaborate with renowned researchers. It also allowed me
+    to hone my research and analytical skills, as well as my ability to work effectively in a team.</p>
+
+
+<h3>Ecole Centrale, Marseille</h3>
+<div class="date">France, 2008 to 2012</div>
+<p>Ingénieur Centralien with a specialization in image processing and spatiotemporal signal
+    processing, I am well-versed in the latest techniques and technologies in these fields. My master's thesis focused
+    on the development of an imaging system based on light polarization for biomedical applications, specifically for
+    the detection of skin cancers. This project allowed me to apply my knowledge and skills to a real-world problem, and
+    to gain valuable experience in the field of biomedical engineering.</p>
+
+<h2>Professional Experience</h2>
+
+<h3>Blockchain.com</h3>
+<div class="date">Lausanne, Switzerland. November 2021 to September 2022</div>
+<ul>
+    <li>Led the integration of Magic Carpet AI's technology into Blockchain.com's technology stack following the
+        acquisition of our company.
+    </li>
+    <li>Implemented improvements to Blockchain's infrastructure, including ease of deployment and procedures, reduced
+        trading latencies by up to 50x.
+    </li>
+    <li>Developed new data pipelines leveraging GCP BigQuery, BigTable, Airflow and other technologies to meet
+        Blockchain's infrastructure constraints and to improve the efficiency and robustness of our data pipelines.
+    </li>
+    <li>Conducted research on signal in orderbook and tick data to improve execution algorithms and develop new
+        strategies.
+    </li>
+</ul>
+
+
+<h3>Magic Carpet AI</h3>
+<div class="date">London, UK and Lausanne, Switzerland. November 2017 to November 2021</div>
+<p>
+<ul>
+    <li>Co-Founded Magic Carpet AI, a London-based startup focused on developing innovative investment strategies
+        utilizing state-of-the-art machine learning concepts (deep reinforcement learning).
+    </li>
+    <li>As CTO, led the research and development efforts, ensuring the focus was on the most rewarding tasks and
+        maximizing the initial budget.
+    </li>
+    <li>Developed a new family of stable and high-performing investment algorithms that learn from past conditions and
+        adapt to current conditions to balance risks and returns.
+    </li>
+    <li>Led the development of a complete in-house trading and risk management system, specifically tailored for digital
+        assets.
+    </li>
+</ul>
+
+</p>
+<h3>Qualimatest</h3>
+<div class="date"> Geneva, Switzerland, June 2013 to October 2014</div>
+<p>
+<li>Experience as a software developer, building automated vision control solutions with data acquisition and signal and
+    image processing.
+</li>
+<li>Analyzed customer requirements and participated in designing technical solutions (optics, software, and hardware)
+</li>
+<li>Developed software solutions (algorithms and GUI) and installed systems on customer premises</li>
+<li>Responsible for testing, validating systems and creating technical documentation and user manuals</li>
+<li>Led the development of QMTSubface, a project developed in partnership with the EPFL which uses machine learning to
+    qualify the esthetic properties of objects.
+</li></p>
+
+
+<h3>Surgical Planning Laboratory, Harvard Medical School</h3>
+<div class="date">Boston, USA, June to December 2012</div>
+<p>Research Trainee in Radiology, Brigham and Women’s Hospital and Harvard Medical School.
+    Finishing my study at TU München, I wrote my master thesis at the Surgical Planning Laboratory.
+    This thesis spans mathematical algorithm development in image segmentation and registration
+    using mechanically inspired models, design of an evaluation phantom and a dependent study, as
+    well as efficient and well-documented software developed in Python and C++, which has been
+    released publicly. This work has been followed by several peer-reviewed publications (MICCAI
+    2013, Medical Image Analysis 2017).</p>
+
+
+<h3>CorInnova</h3>
+<div class="date">College Station, Texas, USA June to August 2010</div>
+<p>R&D Intern working on a cardiac assistant and support device.
+    Prototyped analog hardware for reading an electrocardiogram (ECG) and driving a pump. This
+    was part of the development of a non-blood contacting cardiac assist and support device system
+    that pushes the heart wall synchronized with an ECG.
+    Airbus EADS Final Assembly Line A340, Toulouse, France July to August 2009
+    Intern on the final assembly line of the Airbus A340. Responsibilities included assembly of
+    motors, winglets, and landing gear as well as on verification of electrical systems.</p>
+
+<h2>Skills</h2>
+<h3>Computer Programming</h3>
+<p>Python, C++, React</p>
+
+<h3>Mathematics skill set</h3>
+<p>Linear algebra, functional analysis, dynamical systems, numerical methods, signal and image
+    processing.</p>
+
+<h3>Neural Networks and Machine Learning</h3>
+<p>Artificial neural networks (CNN, RNN, LSTM). Deep Reinforcement Learning (deterministic policy gradient).
+    Spiking neural networks, activity dependent plasticity, </p>
+
+<h2>Publications</h2>
+<table>
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:kNdYIx-mwKoC"
+            class="gsc_a_at">Fully automatic catheter segmentation in MRI with 3D convolutional neural networks:
+        application to MRI-guided gynecologic brachytherapy</a>
+        <div class="gs_gray">Paolo Zaffino, <div class="author">Guillaume Pernelle</div>, Andre Mastmeyer, Alireza Mehrtash, Hongtao Zhang, Ron
+            Kikinis, Tina Kapur, Maria Francesca Spadea
+        </div>
+        <i>Physics in Medicine &amp; Biology 64 (16), 165008<span class="gs_oph">, 2019</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:MXK_kJrjxJIC"
+            class="gsc_a_at">Automatic needle segmentation and localization in MRI with 3-D convolutional neural
+        networks: application to MRI-targeted prostate biopsy</a>
+        <div class="gs_gray">
+            Alireza Mehrtash, Mohsen Ghafoorian, <div class="author">Guillaume Pernelle</div>, Alireza Ziaei, Friso G Heslinga, Kemal Tuncali,
+            Andriy Fedorov, Ron Kikinis, Clare M Tempany, William M Wells, Purang Abolmaesumi, Tina Kapur
+        </div>
+        <i>IEEE transactions on medical imaging 38 (4), 1026-1036<span class="gs_oph">, 2018</span>
+        </i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:0EnyYjriUFMC"
+            class="gsc_a_at">Gap junction plasticity as a mechanism to regulate network-wide oscillations</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div>, Wilten Nicola, Claudia Clopath</div>
+        <i>PLoS computational biology 14 (3), e1006025<span class="gs_oph">, 2018</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:hqOjcs7Dif8C"
+            class="gsc_a_at">Accurate model-based segmentation of gynecologic brachytherapy catheter collections in
+        MRI-images</a>
+        <div class="gs_gray">Andre Mastmeyer, <div class="author">Guillaume Pernelle</div>, Ruibin Ma, Lauren Barber, Tina Kapur</div>
+        <i>Medical image analysis 42, 173-188<span class="gs_oph">, 2017</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:5nxA0vEk-isC"
+            class="gsc_a_at">Gap junction plasticity can lead to spindle oscillations</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div>, Wilten Nicola, Claudia Clopath</div>
+        i>arXiv preprint arXiv:1710.03999<span class="gs_oph">, 2017</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:Se3iqnhoufwC"
+            class="gsc_a_at">Model-based catheter segmentation in MRI-images</a>
+        <div class="gs_gray">Andre Mastmeyer, <div class="author">Guillaume Pernelle</div>, Lauren Barber, Steve Pieper, Dirk Fortmeier, Sandy Wells, Heinz Handels, Tina Kapur</div>
+        <i>arXiv preprint arXiv:1705.06712<span class="gs_oph">, 2017</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:ULOm3_A8WrAC"
+            class="gsc_a_at">Needle trajectory segmentation for mri-guided prostate biopsy</a>
+        <div class="gs_gray">A Ziaei, A Mehrtash, <div class="author">Guillaume Pernelle</div>, A Mastmeyer, A Fedorov, K Tuncali, C Tempany, T Kapur</div>
+        <i>BWH Research Symposion<span class="gs_oph">, 2017</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:Zph67rFs4hoC"
+            class="gsc_a_at">Modelling and analysing of neural network dynamics</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div></div>
+        <i>Imperial College London<span class="gs_oph">, 2017</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:UeHWp8X0CEIC"
+            class="gsc_a_at">EM-navigated catheter placement for gynecologic brachytherapy: an accuracy study</a>
+        <div class="gs_gray">Alireza Mehrtash, Antonio Damato, <div class="author">Guillaume Pernelle</div>, Lauren Barber, Nabgha Farhat, Akila Viswanathan, Robert Cormack, Tina Kapur</div>
+        <i>Medical Imaging 2014: Image-Guided Procedures, Robotic Interventions, and Modeling<span
+                class="gs_oph">, 2014</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:u-x6o8ySG0sC"
+            class="gsc_a_at">Validation of catheter segmentation for MR-guided gynecologic cancer brachytherapy</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div>, Alireza Mehrtash, Lauren Barber, Antonio Damato, Wei Wang, Ravi Teja Seethamraju, Ehud Schmidt, Robert A Cormack, Williams Wells, Akila Viswanathan, Tina Kapur</div>
+        <i>International Conference on Medical Image Computing and Computer-Assisted Intervention<span
+                class="gs_oph">, 2013</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:2osOgNQ5qMEC"
+            class="gsc_a_at">Automated Interstitial Brachytherapy Catheter Localization From Volumetric MR
+        Data</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div>, T Kapur, A Mehrtash, T Penzkofer, A Damato, L Barber, Ehud Schmidt, Akila Viswanathan, R Cormack</div>
+        <i>Medical Physics 40 (6Part2), 94-94<span class="gs_oph">, 2013</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:d1gkVwhDpl0C"
+            class="gsc_a_at">Robust Applicator Registration for Interstitial Gynecologic Brachytherapy</a>
+        <div class="gs_gray"><div class="author">Guillaume Pernelle</div>, Jan Egger, Carolina Vale, Xiaojun Chen, Franz Irlinger, Tim C Lueth, William Wells, Ron Kikinis, Akila Viswanathan, Tina Kapur</div>
+        <i>Brachytherapy 12, S53<span class="gs_oph">, 2013</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:roLk4NBRz8UC"
+            class="gsc_a_at">Needle Labeling for Interstitial Gynecological Brachytherapy</a>
+        <div class="gs_gray">Akila Viswanathan and Tina Kapur Yi Gao, Nabgha Farhat, Neha Agrawal, <div class="author">Guillaume Pernelle</div>, Xiaojun Chen, Jan Egger, Tyler Blevins, Sylvain Bouix, Allen Tannenbaum, William Wells, Ron Kikinis, Ehud Schmidt</div>
+        <i>5th NCIGT and NIH Image Guided Therapy Workshop. NCIGT, NAC, Boston 48<span class="gs_oph">, 2012</span>
+        </i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:9yKSN-GCB0IC"
+            class="gsc_a_at">Segmentation of pelvic structures for gynecologic brachytherapy</a>
+        <div class="gs_gray">Jan Egger, Neha Agrawal, Tyler Blevins, Nabgha Farhat, <div class="author">Guillaume Pernelle</div>, Xiaojun Chen, Yi Gao, William Wells, Tobias Penzkofer, Tina Kapur, AN Viswanathan</div>
+        <i>5th NCIGT and NIH Image Guided Therapy Workshop, 45<span class="gs_oph">, 2012</span></i>
+    </td>
+
+</tr>
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:W7OEmFMy1HYC"
+            class="gsc_a_at">Development of a Non-Blood Contacting Cardiac Assist and Support Device: An In Vivo Proof
+        of Concept Study</a>
+        <div class="gs_gray">M. R. Moreno, S. Biswas, L. D. Harrison, <div class="author">G. Pernelle</div>, M. W. Miller, T. W. Fossum, D. A. Nelson,
+and J. C. Criscione</div>
+        <i>Journal of Medical Devices 5 (4), 041007<span class="gs_oph">, 2011</span></i>
+    </td>
+
+</tr>
+
+<tr class="gsc_a_tr">
+
+    <td class="gsc_a_t"><a
+            href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ehDmahoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=ehDmahoAAAAJ:YsMSGLbcyi4C"
+            class="gsc_a_at">Assessment of Minimally Invasive Device That Provides Simultaneous Adjustable Cardiac
+        Support and Active Synchronous Assist in an Acute Heart Failure Model.</a>
+        <div class="gs_gray">M. R. Moreno, S. Biswas, L. D. Harrison, <div class="author">G. Pernelle</div>, M. W. Miller, T. W. Fossum, D. A. Nelson,
+and J. C. Criscione</div>
+        <i>Journal of Medical Devices 5 (4), 041008<span class="gs_oph">, 2011</span></i>
+    </td>
+
+</tr>
+
+</table>
