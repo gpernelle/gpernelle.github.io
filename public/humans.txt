@@ -1,11 +1,5 @@
-/* TEAM */
-  Developer: Prashant Sinha
-  GitHub: @prashnts
-  Website: https://noop.pw
-  Source: https://github.com/prashnts/prashnts.github.io
-  From: New Delhi, India
-
 /* THANKS */
+  Prashant Sinha (@prashnts)
   GitHub Pages
   Cloudflare
   Open Source Community in general
