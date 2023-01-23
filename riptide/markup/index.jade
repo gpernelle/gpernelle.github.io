@@ -3,19 +3,17 @@ extends templates/base.jade
 block prepend head
   -
     var page = {
-      title: 'no-op',
-      url: 'https://noop.pw',
-      description: "Prashant's homepage.",
+      title: 'GP',
+      url: 'https://gpernelle.github.io',
+      description: "Guillaume's homepage.",
     }
   +meta(page)
 
 
 block prepend body
   body.homepage: main
-    h1 Prashant Sinha
-    h2: em Developer at #[a(href='https://www.partoo.co/en/') Partoo, Paris]
-    h2: a(href='mailto:prashant@noop.pw') prashant@noop.pw
+    h1 Guillaume Pernelle
+    h2: a(href='mailto:gpernelle@gmail.com') gpernelle@gmail.com
     ul
-      li: strong: a(href='https://twitter.com/prashnts') twitter
-      li: strong: a(href='https://github.com/prashnts') github
+      li: strong: a(href='https://github.com/gpernelle') github
       li: strong: a(href='/resume') vitae
