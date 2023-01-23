@@ -1,0 +1,152 @@
+extends templates/base.jade
+
+block prepend head
+  -
+    var page = {
+      title: 'Guillaume Pernelle / resume',
+      url: 'https://gpernelle.github.io/resume',
+      description: "Guillaume Pernelle's resume.",
+    }
+  +meta(page)
+
+mixin ilink(icon, url)
+  - var title = url.replace(/https?:\/\//, '')
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
+
+mixin ilink2(icon, url, title)
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
+
+mixin email(email)
+  a(href='mailto:' + email)
+    i.icon.icon-mail
+    span= email
+
+mixin ispan(icon, content)
+  span #[i.icon(class='icon-' + icon)] #{content}
+
+block append stylesheets
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
+
+block prepend body
+  body.vita: main
+    header
+      - var n = vita.personal.name.split(' ')
+      h1 #[span= n[0]] #{n[1]}
+      p #{vita.personal.title}
+
+    section.info
+      div
+        h1 Web
+        ul
+          li: +ilink('link', vita.info.homepage)
+          li: +ilink('git', vita.info.github)
+      div
+        h1 Info
+        ul
+          li: +email(vita.info.email)
+          li: +ispan('location', vita.info.location)
+
+    section.cover
+      h1 Summary
+      p= vita.cover
+
+    section.xp
+      h1 Experience
+      ul: each xp in vita.experience
+        li
+          aside
+            h2.company= xp.company
+            p.location: +ispan('location', xp.location)
+            p.dates
+              +ispan('calendar', xp.dates.interval)
+              span.duration #{xp.dates.duration}
+            p.position= xp.position
+            //- ul.tags: each tag in xp.tags || []
+            //-   li= tag
+          div.description
+            !{xp.description}
+            if xp.website
+              p.website: +ilink('link', xp.website)
+
+    section.talks
+      h1 Talks and Workshops
+      ul: each talk in vita.talks_and_workshops
+        li
+          aside
+            h2.conference= talk.conference
+            p.location: +ispan('location', talk.location)
+            p.dates
+              +ispan('calendar', talk.dates.interval)
+            p.position= talk.type
+            ul.tags: each tag in talk.tags || []
+              li= tag
+          div.description
+            !{talk.description}
+            if talk.website
+              p.website: +ilink('link', talk.website)
+
+    section.edu
+      h1 Education
+      ul: each edu in vita.education
+        li
+          aside
+            h2.institute= edu.institute
+            p.location: +ispan('location', edu.location)
+            p.dates: +ispan('calendar', edu.dates.interval)
+            p.position= edu.position
+          div.description
+            h3.degree= edu.degree
+            dl
+              if edu.major
+                div
+                  dt Major
+                  dd= edu.major
+              if edu.minor
+                div
+                  dt Minors
+                  dd= edu.minor
+              if edu.percentage
+                div
+                  dt Percentage
+                  dd #{edu.percentage}%
+              if edu.grade
+                div
+                  dt Grade
+                  dd= edu.grade
+            !{edu.description}
+
+    section.publications
+      h1 Publications
+      ul: each pub in vita.publications
+        li
+          div
+            h3: +ilink2('link', pub.link, pub.title)
+            if pub.journal
+              p.subtitle #{pub.journal}, #{pub.year}
+
+    section.open_source
+      h1 Open Source
+      ul: each package in vita.open_source
+        li
+          div.description
+            !{package.description}
+
+            p: +ilink('git', 'https://github.com/' + package.repo)
+
+    //- section.skills
+    //-   h1 Skills
+    //-   ul: each skset, kind in vita.skills
+    //-     li
+    //-       h2= kind
+    //-       ul: each sk in skset
+    //-         li #{sk[0]} #[i= '●'.repeat(sk[1])]
+
+    footer
+      ul
+        li Robot? Check out #[a(href='https://git.io/vPe71'): code YAML source] of this document.
+        li Generated #[code #{_now.format('D MMM Y')}]
+      code.kthx :wq
