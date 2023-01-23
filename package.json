@@ -3,14 +3,14 @@
   "version": "0.2.0",
   "description": "Github Resurrection",
   "main": "riptide/app.coffee",
-  "repository": "prashnts/prashnts.github.io",
+  "repository": "gpernelle/gpernelle.github.io",
   "scripts": {
     "start": "brunch watch -s",
     "build": "brunch build -p",
     "deploy": "sh deploy",
     "test": "mocha"
   },
-  "author": "Prashant Sinha",
+  "author": "GP",
   "license": "MIT",
   "dependencies": {
     "auto-reload-brunch": "^2.2.0",
