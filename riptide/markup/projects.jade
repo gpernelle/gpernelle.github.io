@@ -36,7 +36,6 @@ block append stylesheets
 
 block prepend body
   body.vita: main
-
     section.xp
       h1 Projects
       ul: each proj in projects.projects
@@ -48,7 +47,7 @@ block prepend body
             !{proj.summary}
 
             if proj.image
-              p: +im(proj.image, proj.title)
+              +im(proj.image, proj.title)
 
             if proj.code
               p.code: +ilink('git', proj.code)
