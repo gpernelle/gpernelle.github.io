@@ -1,0 +1,65 @@
+extends templates/base.jade
+
+block prepend head
+  -
+    var page = {
+      title: 'Guillaume Pernelle / resume',
+      url: 'https://gpernelle.github.io/resume',
+      description: "Guillaume Pernelle's resume.",
+    }
+  +meta(page)
+
+mixin ilink(icon, url)
+  - var title = url.replace(/https?:\/\//, '')
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
+
+mixin ilink2(icon, url, title)
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
+
+mixin im(source, title)
+  img.image(src=source alt=title)
+
+mixin email(email)
+  a(href='mailto:' + email)
+    i.icon.icon-mail
+    span= email
+
+mixin ispan(icon, content)
+  span #[i.icon(class='icon-' + icon)] #{content}
+
+block append stylesheets
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
+
+block prepend body
+  body.vita: main
+
+    section.xp
+      h1 Projects
+      ul: each proj in projects.projects
+        li
+          aside
+            h2.title= proj.title
+            ul.tags= proj.tags
+          div.summary
+            !{proj.summary}
+
+            if proj.image
+              p: +im(proj.image, proj.title)
+
+            if proj.code
+              p.code: +ilink('git', proj.code)
+            if proj.link
+              p.link: +ilink('link', proj.link)
+            if proj.website
+              p.website: +ilink('link', proj.website)
+
+
+    footer
+      ul
+        li Robot? Check out #[a(href='https://git.io/vPe71'): code YAML source] of this document.
+        li Generated #[code #{_now.format('D MMM Y')}]
+      code.kthx :wq

@@ -2,6 +2,7 @@
 moment = require 'moment'
 {renderVita} = require './demi'
 global.vita = renderVita './riptide/vita.yaml'
+global.projects = renderVita './riptide/projects.yaml'
 global._now = moment()
 global.DEBUG = '-p' not in global.process.argv
 

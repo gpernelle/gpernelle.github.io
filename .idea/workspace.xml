@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="523c6d64-4caa-4710-98cb-c9e13557dea7" name="Default" comment="" />
+    <list default="true" id="523c6d64-4caa-4710-98cb-c9e13557dea7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brunch-config.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/brunch-config.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riptide/markup/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/riptide/markup/index.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riptide/styles/vita.styl" beforeDir="false" afterPath="$PROJECT_DIR$/riptide/styles/vita.styl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,11 +112,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/Users/guillaume/github/gpernelle.github.io/public"
+    "last_opened_file_path": "/Users/guillaume/github/gpernelle.github.io/riptide"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/riptide" />
+      <recent name="$PROJECT_DIR$/riptide/markup" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
