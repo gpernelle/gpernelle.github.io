@@ -1,3 +1,4 @@
+#!/bin/sh
 rm -rf public
 git checkout master
 npm run build
