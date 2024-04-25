@@ -12,12 +12,35 @@ info:
 #  twitter: https://gpernelle.github.io
 
 cover: |
- Highly skilled and experienced professional with a background in engineering, neuroscience, and machine learning. 
-  Possess a PhD from Imperial College London, engineering degrees from Ecole Centrale Marseille and TU Munich. 
-  Strong leadership skills, successful in integrating advanced technologies into a company's technology stack. 
-  Deep understanding of machine learning concepts. 
-  Experience in software development and data acquisition. Proven ability to work effectively in distributed teams.
+  Accomplished professional with a robust blend of expertise in engineering, neuroscience, and machine learning. 
+  I hold a PhD from Imperial College London along with engineering degrees from École Centrale Marseille and Technische Universität München. 
+  As an entrepreneurial-minded leader, I have founded and successfully exited an AI startup, demonstrating my capability to innovate and drive technology ventures from conception to acquisition. 
+  I am highly skilled in leading research and development initiatives, seamlessly integrating the latest technologies into corporate environments, and possess a deep understanding of machine learning principles to ensure their swift and successful deployment. 
+  Additionally, my background includes effective management of distributed teams, which has consistently ensured project success and driven pioneering advancements.
 experience:
+  - company: Audiala Solutions AG
+    location: Switzerland
+    dates:
+      from: '2022-10-01'
+    position: Founder
+    website: https://www.audiala.com
+    description: |
+      - Founded Audiala Solutions AG, a company dedicated to pioneering new solutions for the tourism industry.
+      - Created an innovative audio guide application, transforming travel experiences globally.
+  - company: Hyll AG
+    location: Switzerland
+    dates:
+      from: '2024-01-01'
+      till: '2024-03-31'
+    position: Consulting CTO
+    website: https://www.hyll.com
+    description: |
+      - Led the implementation of large language models in the company's infrastructure, enabling the development of new
+        products and services.
+      - Trained the team on the latest advances in machine learning and natural language processing, ensuring the
+        successful deployment of new technologies.
+      - Created an AI chatbot and a new recommendation system.
+      - Participated in the Microsoft AI accelerator program.
   - company: Blockchain.com
     location: Remote, Switzerland
     dates:
@@ -121,8 +144,7 @@ experience:
       - Electrical Engineering
     website: https://www.corinnova.com
     description: |
-      # World’s First Minimally Invasive Non-blood Contacting
-      #Cardiac Assist Device to Treat Acute Heart Failure.
+      # World’s First Minimally Invasive Non-blood Contacting Cardiac Assist Device to Treat Acute Heart Failure.
 
       Prototyped analog hardware for reading an electrocardiogram (ECG) and driving a pump. This
       was part of the development of a non-blood contacting cardiac assist and support device system
@@ -154,7 +176,7 @@ experience:
       - Web Development
     description: |
       # Ihre Software wie gewünscht
-
+      Part time job as a freelancer.
       Built a website for OptCon and performed the search engine optimization (SEO).
 
 talks_and_workshops:
@@ -212,6 +234,19 @@ education:
       techniques to the medical field, specifically in radiology. This experience gave me a deep understanding of the
       latest advancements in the field, and the opportunity to collaborate with renowned researchers. It also allowed me
       to hone my research and analytical skills, as well as my ability to work effectively in a team.
+  - institute: École Centrale Marseille
+    location: French Grande Ecole in Engineering and Science
+    position: Masters
+    dates:
+      from: '2008-09-01'
+      till: '2012-12-31'
+    degree: Engineering Degree
+    major: Image and Signal Processing
+    minor: Management and Communication
+    description: |
+      Ingénieur Centralien (corresponding to Master) specialized in image processing and spatio-temporal signal processing.
+      Thesis topic: Development of an imaging system based on light polarization for biomedical
+      applications (detection of skin cancers).
 skills:
   Development:
     - [ Python, 4 ]
