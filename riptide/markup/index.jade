@@ -1,0 +1,19 @@
+extends templates/base.jade
+
+block prepend head
+  -
+    var page = {
+      title: 'GP',
+      url: 'https://gpernelle.github.io',
+      description: "Guillaume's homepage.",
+    }
+  +meta(page)
+
+
+block prepend body
+  body.homepage: main
+    h1 Guillaume Pernelle
+    h2: a(href='mailto:gpernelle@gmail.com') gpernelle@gmail.com
+    ul
+      li: strong: a(href='/resume') vitae
+      li: strong: a(href='/projects') projects

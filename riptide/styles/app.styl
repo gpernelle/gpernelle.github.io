@@ -1,0 +1,53 @@
+// noop.pw
+@require _solarized
+@require _typeface
+@require _axis
+
+
+html, body
+  align-items center
+  font 14px/1.5em type-fira
+  font-feature-settings "calt" 1
+  letter-spacing 0.5px
+  margin 0
+  height 100%
+  position relative
+  text-rendering optimizeLegibility
+
+body.homepage
+  background #fefefe
+  padding 0 40px
+  color $base03
+
+  > main
+    vertically-align()
+    h1, h2
+      margin 0
+      max-width 500px
+      margin-bottom 2px
+    h1
+      font-size 1.5em
+      margin-bottom 10px
+    h2
+      font-size 1em
+      font-weight 100
+    em
+      font-style initial
+    ul
+      margin 0
+      margin-top 50px
+      list-style-type none
+      padding 0
+
+      li
+        display inline-block
+        margin-right 10px
+
+a
+  link($cyan)
+
+strong a
+  link(#6c71c4)
+
+pre
+  font 14px/1.2em type-fira

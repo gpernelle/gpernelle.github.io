@@ -1,0 +1,369 @@
+---
+personal:
+  name: Guillaume Pernelle
+  title: Technical Leader and R&D scientist. Experienced in machine learning, neuroscience, medical imaging and finance. Successful exit founder.
+info:
+  homepage: https://gpernelle.github.io
+  github: https://github.com/gpernelle
+  #  keybase: https://gpernelle.github.io
+  email: gpernelle@gmail.com
+  #  mobile: 0000
+  location: Lausanne, Switzerland
+#  twitter: https://gpernelle.github.io
+
+cover: |
+  Accomplished professional with a robust blend of expertise in engineering, neuroscience, and machine learning. 
+  I hold a PhD from Imperial College London along with engineering degrees from École Centrale Marseille and Technische Universität München. 
+  As an entrepreneurial-minded leader, I have founded and successfully exited an AI startup, demonstrating my capability to innovate and drive technology ventures from conception to acquisition. 
+  I am highly skilled in leading research and development initiatives, seamlessly integrating the latest technologies into corporate environments, and possess a deep understanding of machine learning principles to ensure their swift and successful deployment. 
+  Additionally, my background includes effective management of distributed teams, which has consistently ensured project success and driven pioneering advancements.
+experience:
+  - company: Audiala Solutions AG
+    location: Switzerland
+    dates:
+      from: '2022-10-01'
+    position: Founder
+    website: https://www.audiala.com
+    description: |
+      - Founded Audiala Solutions AG, a company dedicated to pioneering new solutions for the tourism industry.
+      - Creating an innovative audio guide application, transforming travel experiences globally.
+      - Developed a solution to instantly translate Android and iOS applications and their store listings into any language.
+  - company: Hyll AG
+    location: Switzerland
+    dates:
+      from: '2024-01-01'
+      till: '2024-03-31'
+    position: Consulting CTO
+    website: https://www.hyll.com
+    description: |
+      - Led the implementation of large language models in the company's infrastructure, enabling the development of new
+        products and services.
+      - Trained the team on the latest advances in machine learning and natural language processing, ensuring the
+        successful deployment of new technologies.
+      - Created an AI chatbot and a new recommendation system.
+      - Participated in the Microsoft AI accelerator program.
+  - company: Blockchain.com
+    location: Remote, Switzerland
+    dates:
+      from: '2021-11-05'
+      till: '2022-08-31'
+    position: Principal Quantitative Researcher
+    website: https://www.blockchain.com
+    description: |
+      - Led the integration of Magic Carpet AI's technology into Blockchain.com's technology stack following the
+        acquisition of our company.
+      
+      - Implemented improvements to Blockchain's infrastructure, including ease of deployment and procedures, reduced
+        trading latencies by up to 50x.
+      
+      - Developed new data pipelines leveraging GCP BigQuery, BigTable, Airflow and other technologies to meet
+        Blockchain's infrastructure constraints and to improve the efficiency and robustness of our data pipelines.
+      
+      - Conducted research on signal in orderbook and tick data to improve execution algorithms and develop new
+        strategies.
+
+
+  - company: Magic Carpet AI
+    location: Remote, UK and Switzerland
+    dates:
+      from: '2017-11-01'
+      till: '2021-11-04'
+    position: Co-founder, CTO
+    tags:
+      - Machine Learning
+      - Technology infrastructure
+      - Business Development and Administration
+    description: |
+      # MCAI - Deep Reinforcement Learning applied to Portfolio Management
+
+      - Co-Founded Magic Carpet AI, a London-based startup focused on developing innovative investment strategies
+        utilizing state-of-the-art machine learning concepts (deep reinforcement learning).
+      
+      - As CTO, led the research and development efforts, ensuring the focus was on the most rewarding tasks and
+        maximizing the initial budget.
+      
+      - Developed a new family of stable and high-performing investment algorithms that learn from past conditions and
+        adapt to current conditions to balance risks and returns.
+      
+      - Led the development of a complete in-house trading and risk management system, specifically tailored for digital
+        assets.
+
+
+  - company: Qualimatest
+    location: Geneva, Switzerland
+    dates:
+      from: '2013-06-01'
+      till: '2014-10-31'
+    position: Software Developer
+    tags:
+      - Automation
+      - Software Development
+      - Computer Vision
+    website: https://www.qmt.ch
+    description: |
+      # Solutions for Testing and Quality Control
+      - Experience as a software developer, building automated vision control solutions with data acquisition and signal and image processing.
+      
+      - Analyzed customer requirements and participated in designing technical solutions (optics, software, and hardware)
+      
+      - Developed software solutions (algorithms and GUI) and installed systems on customer premises
+      
+      - Responsible for testing, validating systems and creating technical documentation and user manuals
+      
+      - Led the development of QMTSubface, a project developed in partnership with the EPFL which uses machine learning to qualify the esthetic properties of objects.
+  - company: Surgical Planning Laboratory, Harvard Medical School
+    location: Boston, USA
+    dates:
+      from: '2012-06-01'
+      till: '2012-12-20'
+    position: Research Trainee in Radiology
+    tags:
+      - Medical Image Processing
+      - Software Development
+      - Computer Vision
+      - 3D Slicer
+    website: https://spl.harvard.edu/
+    description: |
+      # Research Laboratory in the Department of Radiology of Brigham and Women's Hospital
+
+      Research Trainee in Radiology, Brigham and Women’s Hospital and Harvard Medical School.
+      Finishing my study at TU München, I wrote my master thesis at the Surgical Planning Laboratory.
+      This thesis spans mathematical algorithm development in image segmentation and registration
+      using mechanically inspired models, design of an evaluation phantom and a dependent study, as
+      well as efficient and well-documented software developed in Python and C++, which has been
+      released publicly. This work has been followed by several peer-reviewed publications (MICCAI
+      2013, Medical Image Analysis 2017).
+
+  - company: CorInnova
+    location: College Station, Texas, USA
+    dates:
+      from: '2010-05-01'
+      till: '2010-08-31'
+    position: Research and Development Intern
+    tags:
+      - Image Processing and Analysis
+      - Electrical Engineering
+    website: https://www.corinnova.com
+    description: |
+      # World’s First Minimally Invasive Non-blood Contacting Cardiac Assist Device to Treat Acute Heart Failure.
+
+      Prototyped analog hardware for reading an electrocardiogram (ECG) and driving a pump. This
+      was part of the development of a non-blood contacting cardiac assist and support device system
+      that pushes the heart wall synchronized with an ECG.
+
+  - company: Airbus EADS
+    location: Toulouse, France
+    dates:
+      from: '2009-07-01'
+      till: '2009-08-01'
+    position: Intern
+    tags:
+      - Project Management
+    website: https://www.airbus.com/en
+    description: |
+      # A340 Final Assembly Line
+
+      Intern on the final assembly line of the Airbus A340. Responsibilities included assembly of
+      motors, winglets, and landing gear as well as on verification of electrical systems.
+  - company: OptCon
+    location: Munich, Germany
+    dates:
+      from: '2011-05-01'
+      till: '2012-05-01'
+    position: Freelancer
+    website: http://optcon.de
+    tags:
+      - SEO
+      - Web Development
+    description: |
+      # Ihre Software wie gewünscht
+      Part time job as a freelancer.
+      Built a website for OptCon and performed the search engine optimization (SEO).
+
+talks_and_workshops:
+  - conference: Bernstein Conference
+    location: Göttingen, Germany
+    dates:
+      from: '2013-09-13'
+      till: '2013-09-15'
+    type: Conference
+    tags:
+      - Computational Neuroscience
+    description: |
+      # Gap junction plasticity as a mechanism to regulate network-wide oscillations
+
+  - conference: MICCAI 2013
+    location: Japan
+    dates:
+      from: '2013-09-22'
+      till: '2013-09-26'
+    type: Conference
+    tags:
+      - Medical Image Computing
+    description: |
+      # Validation of catheter segmentation for MR-guided gynecologic cancer brachytherapy
+
+education:
+  - institute: Imperial College London
+    location: Bioengineering Department
+    position: PhD
+    dates:
+      from: '2014-11-01'
+      till: '2017-10-23'
+    degree: PhD in Computational Neuroscience
+    description: |
+      I modeled and analyzed the dynamics of neural networks, focusing on the role of gap junctions, or electrical
+      synapses, in regulating the oscillations of electrical activity observed in many brain regions. My research showed
+      that gap junction plasticity could play a crucial role in ensuring robust information transfer between brain
+      regions. Additionally, I studied the relationship between blood oxygen concentration and neural activity. As a
+      Graduate Teaching Assistant, I also assisted in Computational Neuroscience, Mathematics, and Python Programming
+      courses. 
+
+  - institute: Technische Universität München
+    location: Mechanical Engineering Faculty
+    position: Masters
+    dates:
+      from: '2010-09-01'
+      till: '2012-12-31'
+    degree: Diplom Ingenieur (Masters)
+    major: Medical Technology
+    minor: Micro Technology, Product Development
+    description: |
+      I participated in the Top Industrial Managers for Europe program, which
+      provides training for future leaders in the industry. During my degree, I completed my thesis at a lab
+      affiliated with Harvard Medical School, where I applied research, software engineering, and mechanical engineering
+      techniques to the medical field, specifically in radiology. This experience gave me a deep understanding of the
+      latest advancements in the field, and the opportunity to collaborate with renowned researchers. It also allowed me
+      to hone my research and analytical skills, as well as my ability to work effectively in a team.
+  - institute: École Centrale Marseille
+    location: French Grande Ecole in Engineering and Science
+    position: Masters
+    dates:
+      from: '2008-09-01'
+      till: '2012-12-31'
+    degree: Engineering Degree
+    major: Image and Signal Processing
+    minor: Management and Communication
+    description: |
+      Ingénieur Centralien (corresponding to Master) specialized in image processing and spatio-temporal signal processing.
+      Thesis topic: Development of an imaging system based on light polarization for biomedical
+      applications (detection of skin cancers).
+skills:
+  Development:
+    - [ Python, 4 ]
+    - [ SQL, 4 ]
+    - [ Devops, 4 ]
+    - [ Software Architecture, 3 ]
+  Misc:
+    - [ Scientific Computing, 4 ]
+    - [ Data Science, 4 ]
+    - [ Machine Learning, 3 ]
+    - [ Frontend, 3 ]
+
+open_source:
+  - repo: needlefinder/needlefinder-3d-unet
+    description: |
+      # Deep Learning applied to Needle Segmentation 
+
+      Convolutional neural networks (3D U-Net) model to segment needles from 3D MRI, using the Tensorflow framework.
+
+  - repo: needlefinder/needlefinder
+    description: |
+      #  NeedleFinder: fast interactive needle detection.
+
+      Open-source software extension that provides interactive tools to segment needles in MR/CT images. It has been mostly tested on MRI from gynelogical brachytherapy cases. Cf <<Validation of Catheter Segmentation for MR-Guided Gynecologic Cancer Brachytherapy.>> MICCAI 2013
+
+  - repo: gpernelle/igyne
+    description: |
+      # iGyne: Tools to for Image Guided Brachytherapy
+      iGyne is currently articulated in seven steps:
+
+      - procedure selection
+      - applicator selection
+      - data importation
+      - initial applicator registration
+      - refined applicator registration
+      - needle position planning
+      - needle detection 
+
+publications:
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:kNdYIx-mwKoC
+    title: Fully automatic catheter segmentation in MRI with 3D convolutional neural networks - application to MRI-guided gynecologic brachytherapy
+    authors: Paolo Zaffino, Guillaume Pernelle, Andre Mastmeyer, Alireza Mehrtash, Hongtao Zhang, Ron Kikinis, Tina Kapur, Maria Francesca Spadea
+    journal: Physics in Medicine & Biology 64 (16), 165008
+    year: 2019
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:MXK_kJrjxJIC
+    title: Automatic needle segmentation and localization in MRI with 3-D convolutional neural networks - application to MRI-targeted prostate biopsy
+    authors: Alireza Mehrtash, Mohsen Ghafoorian, Guillaume Pernelle, Alireza Ziaei, Friso G Heslinga, Kemal Tuncali, Andriy Fedorov, Ron Kikinis, Clare M Tempany, William M Wells, Purang Abolmaesumi, Tina Kapur
+    journal: IEEE transactions on medical imaging 38 (4), 1026-1036
+    year: 2018
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:0EnyYjriUFMC
+    title: Gap junction plasticity as a mechanism to regulate network-wide oscillations
+    authors: Guillaume Pernelle, Wilten Nicola, Claudia Clopath
+    journal: PLoS computational biology 14 (3), e1006025
+    year: 2018
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:hqOjcs7Dif8C
+    title: Accurate model-based segmentation of gynecologic brachytherapy catheter collections in MRI-images
+    authors: Andre Mastmeyer, Guillaume Pernelle, Ruibin Ma, Lauren Barber, Tina Kapur
+    journal: Medical image analysis 42, 173-188
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:5nxA0vEk-isC
+    title: Gap junction plasticity can lead to spindle oscillations
+    authors: Guillaume Pernelle, Wilten Nicola, Claudia Clopath
+    journal: arXiv preprint arXiv:1710.03999
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:Se3iqnhoufwC
+    title: Model-based catheter segmentation in MRI-images
+    authors: Andre Mastmeyer, Guillaume Pernelle, Lauren Barber, Steve Pieper, Dirk Fortmeier, Sandy Wells, Heinz Handels, Tina Kapur
+    journal: arXiv preprint arXiv:1705.06712
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:ULOm3_A8WrAC
+    title: Needle trajectory segmentation for mri-guided prostate biopsy
+    authors: A Ziaei, A Mehrtash, Guillaume Pernelle, A Mastmeyer, A Fedorov, K Tuncali, C Tempany, T Kapur
+    journal: BWH Research Symposion
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:Zph67rFs4hoC
+    title: Modelling and analysing of neural network dynamics
+    authors: Guillaume Pernelle
+    journal: Imperial College London
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:UeHWp8X0CEIC
+    title: EM-navigated catheter placement for gynecologic brachytherapy - an accuracy study
+    authors: Alireza Mehrtash, Antonio Damato, Guillaume Pernelle, Tina Kapur
+    journal: Medical physics 44 (9), e270-e278
+    year: 2017
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:u-x6o8ySG0sC
+    title: Validation of catheter segmentation for MR-guided gynecologic cancer brachytherapy
+    authors: Guillaume Pernelle, Alireza Mehrtash, Lauren Barber, Antonio Damato, Wei Wang, Ravi Teja Seethamraju, Ehud Schmidt, Robert A Cormack, Williams Wells, Akila Viswanathan, Tina Kapur
+    journal: International Conference on Medical Image Computing and Computer-Assisted Intervention
+    year: 2013
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:2osOgNQ5qMEC
+    title: Automated Interstitial Brachytherapy Catheter Localization From Volumetric MR Data
+    authors: Guillaume Pernelle, T Kapur, A Mehrtash, T Penzkofer, A Damato, L Barber, Ehud Schmidt, Akila Viswanathan, R Cormack
+    journal: Medical Physics 40 (6Part2), 94-94
+    year: 2013
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:d1gkVwhDpl0C
+    title: Robust Applicator Registration for Interstitial Gynecologic Brachytherapy
+    authors: Guillaume Pernelle, Jan Egger, Carolina Vale, Xiaojun Chen, Franz Irlinger, Tim C Lueth, William Wells, Ron Kikinis, Akila Viswanathan, Tina Kapur
+    journal: Brachytherapy 12, S53
+    year: 2013
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:roLk4NBRz8UC
+    title: Needle Labeling for Interstitial Gynecological Brachytherapy
+    authors: Akila Viswanathan, Tina Kapur Yi Gao, Nabgha Farhat, Neha Agrawal, Guillaume Pernelle, Xiaojun Chen, Jan Egger, Tyler Blevins, Sylvain Bouix, Allen Tannenbaum, William Wells, Ron Kikinis, Ehud Schmidt
+    journal: 5th NCIGT and NIH Image Guided Therapy Workshop. NCIGT, NAC, Boston 48
+    year: 2012
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:9yKSN-GCB0IC
+    title: Segmentation of pelvic structures for gynecologic brachytherapy
+    authors: Jan Egger, Neha Agrawal, Tyler Blevins, Nabgha Farhat, Guillaume Pernelle, Xiaojun Chen, Yi Gao, William Wells, Tobias Penzkofer, Tina Kapur, AN Viswanathan
+    journal: 5th NCIGT and NIH Image Guided Therapy Workshop, 45
+    year: 2012
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:YOwf2qJgpHMC
+    title: Development of a Non-Blood Contacting Cardiac Assist and Support Device - An In Vivo Proof of Concept Study
+    authors: M. R. Moreno, S. Biswas, L. D. Harrison, G. Pernelle, M. W. Miller, T. W. Fossum, D. A. Nelson, and J. C. Criscione
+    journal: Journal of Medical Devices 5 (4), 041007
+    year: 2011
+  - link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ehDmahoAAAAJ&sortby=pubdate&citation_for_view=ehDmahoAAAAJ:YsMSGLbcyi4C
+    title: Assessment of Minimally Invasive Device That Provides Simultaneous Adjustable Cardiac Support and Active Synchronous Assist in an Acute Heart Failure Model.
+    authors: M. R. Moreno, S. Biswas, L. D. Harrison, G. Pernelle, M. W. Miller, T. W. Fossum, D. A. Nelson, and J. C. Criscione
+    journal: Journal of Medical Devices 5 (4), 041008,
+    year: 2011
